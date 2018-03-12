@@ -1,5 +1,5 @@
 {
-    "name": "propel/propel-bundle",
+    "name": "finanzcheck/propel-bundle",
     "description": "Integration of Propel in Symfony2",
     "keywords": ["propel", "orm", "persistence"],
     "type": "symfony-bundle",
