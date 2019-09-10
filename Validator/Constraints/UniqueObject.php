@@ -50,7 +50,7 @@ class UniqueObject extends Constraint
             throw new UnexpectedTypeException($this->fields, 'array');
         }
 
-        if (0 === count($this->fields)) {
+        if (is_array($this->fields) && 0 === count($this->fields)) {
             throw new ConstraintDefinitionException("At least one field must be specified.");
         }
 
