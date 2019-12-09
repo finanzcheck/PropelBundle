@@ -1,22 +1,30 @@
 {
     "name": "finanzcheck/propel-bundle",
     "description": "Integration of Propel in Symfony2",
-    "keywords": ["propel", "orm", "persistence"],
+    "keywords": [
+        "propel",
+        "orm",
+        "persistence"
+    ],
     "type": "symfony-bundle",
     "license": "MIT",
-    "authors": [{
-        "name": "William Durand",
-        "email": "william.durand1@gmail.com"
-    }],
-
+    "authors": [
+        {
+            "name": "William Durand",
+            "email": "william.durand1@gmail.com"
+        }
+    ],
     "autoload": {
-        "psr-4": { "Propel\\Bundle\\PropelBundle\\": "" },
-        "exclude-from-classmap": [ "Tests/" ]
+        "psr-4": {
+            "Propel\\Bundle\\PropelBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "Tests/"
+        ]
     },
-
     "require": {
         "propel/propel": "2.0.0-alpha8",
-        "symfony/symfony": "^2.8|^3.0",
+        "symfony/symfony": "^3.4.36",
         "symfony/security-acl": "^2.8|^3.0"
     },
     "require-dev": {
