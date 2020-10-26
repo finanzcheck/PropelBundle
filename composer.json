@@ -1,5 +1,5 @@
 {
-    "name": "propel/propel-bundle",
+    "name": "finanzcheck/propel-bundle",
     "description": "Integration of Propel in Symfony",
     "keywords": ["propel", "orm", "persistence"],
     "type": "symfony-bundle",
@@ -13,7 +13,7 @@
         "exclude-from-classmap": [ "Tests/" ]
     },
     "require": {
-        "propel/propel": "dev-master",
+        "propel/propel": "2.0.0-alpha8",
         "symfony/console": "^2.8|^3.0|^4.0",
         "symfony/dependency-injection": "^2.8|^3.0|^4.0",
         "symfony/framework-bundle": "^2.8|^3.0|^4.0",
@@ -23,7 +23,8 @@
         "phpunit/phpunit": "^6.0",
         "sensio/framework-extra-bundle": "^4.0",
         "symfony/form": "^2.8|^3.0|^4.0",
+        "symfony/security": "^2.8|^3.0|^4.0",
         "fzaninotto/faker": "^1.5",
-        "mikey179/vfsStream": "^1.6"
+        "mikey179/vfsstream": "^1.6"
     }
 }
