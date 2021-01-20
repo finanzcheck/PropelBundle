@@ -13,7 +13,7 @@
         "exclude-from-classmap": [ "Tests/" ]
     },
     "require": {
-        "propel/propel": "2.0.0-alpha8",
+        "propel/propel": "2.0.0-alpha11",
         "symfony/console": "^2.8|^3.0|^4.0",
         "symfony/dependency-injection": "^2.8|^3.0|^4.0",
         "symfony/framework-bundle": "^2.8|^3.0|^4.0",
