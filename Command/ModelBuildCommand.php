@@ -33,8 +33,8 @@ class ModelBuildCommand extends WrappedCommand
             ->setDescription('Build the model classes based on Propel XML schemas')
 
             ->addOption('connection', null, InputOption::VALUE_IS_ARRAY | InputOption::VALUE_OPTIONAL, 'Connection to use. Example: default, bookstore')
-            ->addOption('schema-dir', null, InputOption::VALUE_REQUIRED, 'The directory where the schema files are placed')
-            ->addOption('output-dir', null, InputOption::VALUE_REQUIRED, 'The output directory')
+            ->addOption('schema-dir', null, InputOption::VALUE_OPTIONAL, 'The directory where the schema files are placed')
+            ->addOption('output-dir', null, InputOption::VALUE_OPTIONAL, 'The output directory')
             ->addArgument('bundle', InputArgument::OPTIONAL, 'The bundle to generate model classes from')
         ;
     }
