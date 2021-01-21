@@ -55,9 +55,16 @@ class ModelBuildCommand extends WrappedCommand
         $outputDirDefault = $this->getApplication()->getKernel()->getRootDir().'/../';
         $outputDir = $this->input->getOption('output-dir') ?: $outputDirDefault;
 
-        return array(
+        $result = [
             '--output-dir' => $outputDir,
-            '--schema-dir' => $input->getOption('schema-dir'),
-        );
+        ];
+
+        $schemaDir = $input->getOption('schema-dir');
+
+        if ($schemaDir) {
+            $result['--schema-dir'] = $schemaDir;
+        }
+
+        return $result;
     }
 }
